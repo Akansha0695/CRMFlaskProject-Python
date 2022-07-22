@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}
+   Customer Form
+{% endblock title %}
+
+
+{% block body %}
+<form method="post">
+    <div class="mb-3">
+      <label for="CustName" class="form-label">Customer Name</label>
+      <input type="text" class="form-control" id="CustName" name="CustName">
+    </div>
+    <div class="mb-3">
+        <label for="CustContact" class="form-label">Customer Conatct</label>
+        <input type="text" class="form-control" id="CustContact" name="CustContact">
+    </div>
+    <div class="mb-3">
+        <label for="CustLocation" class="form-label">Customer Location</label>
+        <input type="text" class="form-control" id="CustLocation" name="CustLocation">
+    </div>
+  <div class="mb-3">
+      <label for="CustIncome" class="form-label">Customer Income</label>
+      <input type="text" class="form-control" id="CustIncome" name="CustIncome">
+  </div>
+
+<div class="mb-3">
+    <label for="CustJobType" class="form-label">Customer JobType</label>
+    <input type="text" class="form-control" id="CustJobType" name="CustJobType">
+</div>
+<div class="mb-3">
+  <label for="remarkCust" class="form-label">Leads</label>
+  <input type="text" class="form-control" id="remarkCust" name="remarkCust">
+</div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock body %}
