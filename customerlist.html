@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Customers
+{% endblock title %}
+
+
+{% block body %}
+<h1>Customer Profile</h1>
+
+<table class="table table-bordered table-striped table-hover">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Contact</th>
+        <th>Location</th>
+        <th>Income</th>
+        <th>Job Type</th>
+        <th>Leads</th>
+        <th>Delete Customer</th>
+        <th>Update Customer</th>
+    </tr>
+    
+    {% for Customer in customerlist %}
+        <tr>
+            <td>{{Customer[0]}}</td>
+            <td>{{Customer[1]}}</td>
+            <td>{{Customer[2]}}</td>
+            <td>{{Customer[3]}}</td>
+            <td>{{Customer[4]}}</td>
+            <td>{{Customer[5]}}</td>
+            <td>{{Customer[6]}}</td> 
+            <td><a href='delcustomer/{{Customer[0]}}' class='btn btn-danger' >Delete</a></td>
+            <td><a href='UpdateCustDetail/{{Customer[0]}}' class='btn btn-warning' >Update</a></td>
+        </tr>
+
+    {% endfor %}
+  </table>
+{% endblock body %}

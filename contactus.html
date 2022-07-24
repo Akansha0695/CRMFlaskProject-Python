@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Contact Us
+{% endblock title %}
+
+{% block body %}
+<center><h1><p class="fst-italic">Contact Us</p></h1></center>
+<img src="{{ url_for('static',filename='pic5.webp')}}" alt='flag' height='400' width='50' class="d-block w-100" > 
+
+<br></br>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+#myDIV {
+  height:90px;
+  background-color:#FFFFFF;
+  text-align: right;
+}
+</style>
+</head>
+<body>
+<div id="myDIV">
+<h1>Let's make something awesome together.</h1>
+<h6>Build Your Brand - Get New Business - Manage Clients - Do It Yourself</h6>
+</div></body></html>
+
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+  Meet US
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 400px;">
+     <p><img src="{{ url_for('static',filename='pic7.png')}}" alt='flag' style='float:left;width:30px;height:25px'>Mobile   : 8080335546</p>
+     <p><img src="{{ url_for('static',filename='pic8.png')}}"alt='flag' style='float:left;width:30px;height:25px'>Email Id : Crmforyou@yahoo.in</p>
+     <p><img src="{{ url_for('static',filename='pic9.png')}}" alt='flag' style='float:left;width:25px;height:25px'>Office   : Crystal Arc,14th Floor,Bandra,Mumbai.</p>
+    </div>
+  </div>
+</div>
+
+{% endblock body %}
+    
+
+
+
+
+
+
